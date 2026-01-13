@@ -22,3 +22,15 @@ Install dependencies:
 ```bash
 python -m pip install -r requirements.txt
 ```
+
+## Prediction
+
+To make predictions using the trained model:
+
+```bash
+python3 predict_using_model.py --model best_model.joblib --input mock_input.csv --output preds.csv
+```
+
+This command loads the saved model from `best_model.joblib`, reads the input data from `mock_input.csv`, generates predictions, and saves them to `preds.csv`.
+
+If the `--output` argument is omitted, predictions are printed to stdout instead.
